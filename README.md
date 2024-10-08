@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# QuickCuisine - Fast and Delicious Recipes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QuickCuisine is a React-based web application designed to provide a fast, efficient way to explore and share delicious recipes. This application utilizes a service worker to enhance performance through API caching and offers a dark mode feature for a customizable user experience.
 
-## Available Scripts
+![QuickCuisine Screenshot] ![1728430906380](image/README/1728430906380.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Recipe Selection Dropdown**: Users can select a recipe from a dropdown menu populated with names fetched from an external API.
+- **Recipe Details Display**: Upon selecting a recipe, details such as ingredients, instructions, and difficulty level are displayed.
+- **Service Worker Implementation**: Implements a service worker to cache API responses for offline access and faster subsequent loads.
+- **Dark Mode**: Allows users to toggle between light and dark themes for ease of use under different lighting conditions.
+- **Responsive Design**: Fully responsive layout that adapts to various screen sizes for optimal viewing on any device.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+What you need to install the software:
 
-### `npm run build`
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A step-by-step series of examples that tell you how to get a development environment running:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+`git clone https://github.com/arzucaner/react-recipe-app`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install NPM packages: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`cd QuickCuisine npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ `npm start`
 
-## Learn More
+This runs the app in the development mode. Open http://localhost:3001 to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Using the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Select a Recipe**: Use the dropdown menu to choose a recipe.
+- **View Recipe Details**: After selecting a recipe, the details will be displayed below the dropdown.
+- **Toggle Dark Mode**: Use the button in the header to switch themes.
 
-### Code Splitting
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React** - The web framework used
+- **Create React App** - Used to bootstrap the initial setup
+- **Service Workers** - For caching API responses and enabling offline functionality
+- **DummyJSON** - API for fetching recipe data
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is deployed on Netlify.
 
-### Making a Progressive Web App
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Arzu Caner**
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc

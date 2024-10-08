@@ -1,0 +1,65 @@
+/* General style file defined color variables */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #cccccc;
+    --focus-border-color: #007BFF;
+    --hover-border-color: #007BFF;
+}
+
+/* Dark mode variables */
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --border-color: #555555;
+    --focus-border-color: #1E90FF;
+    --hover-border-color: #1E90FF;
+}
+
+/* Label styles for dropdown */
+label {
+  display: block;
+  font-size: 18px; /* Making it slightly larger for visibility */
+  color: var(--text-color); /* Using the defined text color variable */
+  margin-bottom: 8px; /* Space below the label for separation */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* Dropdown styles */
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus, select:hover {
+    border: 1px solid var(--focus-border-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Updated shadow effect for better visibility */
+}
+
+option {
+    padding: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+div#dropdown-area {
+    background-color: #f8f9fa; /* Light grey tone */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

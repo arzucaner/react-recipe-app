@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Dropdown from './components/Dropdown';
+import RecipeDetail from './components/RecipeDetail';
 
-function App() {
+const App = () => {
+  const [selectedRecipeId, setSelectedRecipeId] = useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
+      <header>
+        <h1>QuickCuisine</h1>
+        <button onClick={toggleTheme}>{isDarkMode ? 'Activate Light Mode' : 'Activate Dark Mode'}</button>       
       </header>
+      <main>
+        <Dropdown onSelect={setSelectedRecipeId} />
+        {selectedRecipeId && (
+          <RecipeDetail recipeId={selectedRecipeId} />
+        )}
+      </main>
     </div>
   );
-}
+};
 
 export default App;
+
+

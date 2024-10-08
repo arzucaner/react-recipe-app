@@ -1,0 +1,67 @@
+.recipe-detail { 
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--background-light, #f9f9f9); /* Dark mode desteği için */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-detail:hover {
+    transform: scale(1.02);
+  }
+  
+  .recipe-detail h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--text-normal, #333); /* Dark mode desteği için */
+    font-weight: bold;
+  }
+  
+  .recipe-detail p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: var(--text-light, #555); /* Dark mode desteği için */
+  }
+  
+  .recipe-detail img.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-detail strong {
+    font-weight: 600;
+  }
+  
+  /* Dark Mode Stilleri */
+  :root {
+    --background-light: #f9f9f9;
+    --text-normal: #333;
+    --text-light: #555;
+  }
+  
+  .dark-mode {
+    --background-light: #2c2c2c;
+    --text-normal: #e0e0e0;
+    --text-light: #aaa;
+  }
+  
+  /* Responsiveness İyileştirmeleri */
+  @media (max-width: 600px) {
+    .recipe-detail h2 {
+      font-size: 20px; /* Küçük ekranlarda başlık font boyutunu azalt */
+    }
+  
+    .recipe-detail p {
+      font-size: 14px; /* Küçük ekranlarda paragraf font boyutunu azalt */
+    }
+  
+    .recipe-detail img.recipe-image {
+      max-width: 100%; /* Küçük ekranlarda resim boyutunu sınırla */
+    }
+  }
+  
